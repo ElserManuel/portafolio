@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./sections/Navbar";
+import HeroText from "./sections/HeroText";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="relative">
+      {/* Navegación */}
+      <Navbar />
 
-export default App
+      {/* Secciones */}
+      <section id="inicio">
+        <HeroText />
+      </section>
+      
+      {/* Sección de experiencia (placeholder) */}
+      <section id="experiencia" className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="container mx-auto px-6 py-20">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Experiencia</h2>
+          <p className="text-center text-gray-600">Contenido de experiencia...</p>
+        </div>
+      </section>
+      
+      {/* Sección de proyectos (placeholder) */}
+      <section id="proyectos" className="min-h-screen bg-white flex items-center justify-center">
+        <div className="container mx-auto px-6 py-20">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Proyectos</h2>
+          <p className="text-center text-gray-600">Contenido de proyectos...</p>
+        </div>
+      </section>
+      
+      {/* Sección de contacto (placeholder) */}
+      <section id="contacto" className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="container mx-auto px-6 py-20">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Contacto</h2>
+          <p className="text-center text-gray-600">Contenido de contacto...</p>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default App;
