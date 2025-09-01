@@ -18,7 +18,7 @@ const Experiencia = () => {
       tecnologias: ["Go", "WebSocket", "Cassandra DB", "Docker", "APIs Binance"]
     },
     {
-      empresa: "Proyecto PRS",
+      empresa: "Proyecto NPH",
       cargo: "Full Stack Developer",
       periodo: "Agosto 2024 – Junio 2025",
       ubicacion: "Remoto",
